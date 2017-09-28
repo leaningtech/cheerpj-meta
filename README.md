@@ -40,9 +40,8 @@ To get started with CheerpJ, please refer to the following pages:
 Bugs and Questions
 -------
  
-CheerpJ is currently in a private beta stage, and we welcome any feedback and bug report on it through our Issue Tracking.
+CheerpJ is currently in a public beta stage, and we welcome any feedback and bug report on it through our Issue Tracking.
 
-You can also get in touch via our [mailing list][mail] or via the IRC channel
-\#plasma-umass on Freenode.
+You can also get in touch via our [mailing list][mail].
 
 [mail]: https://groups.google.com/forum/#!forum/cheerpj-developers
