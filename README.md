@@ -38,6 +38,10 @@ To get started with CheerpJ, please refer to the following pages:
 1. [Getting Started](Getting-Started)
 2. [Command Line Options](Command-Line-Options)
 
+Demos
+------
+Several demos of CheerpJ can be found at https://leaningtech.com/cheerpj/demos/
+
 Bugs and Questions
 -------
  
