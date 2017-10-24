@@ -35,8 +35,8 @@ You can download CheerpJ beta for Linux, Windows and macOS at this address:
 https://leaningtech.com/cheerpj/download/noncommercial/
 
 To get started with CheerpJ, please refer to the following pages:
-1. [Getting Started](Getting-Started)
-2. [Command Line Options](Command-Line-Options)
+1. [Getting Started](https://github.com/leaningtech/cheerpj-meta/wiki/Getting-Started)
+2. [Command Line Options](https://github.com/leaningtech/cheerpj-meta/wiki/Command-Line-Options)
 
 Demos
 ------
