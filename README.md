@@ -10,6 +10,7 @@ CheerpJ is a Java bytecode to JavaScript compiler, compatible with 100% of Java,
 Download latest version: [![Latest version](https://img.shields.io/badge/cheerpj-beta3-brightgreen.svg)](https://leaningtech.com/cheerpj/download/noncommercial/)
 
 Main documentation link: <https://github.com/leaningtech/cheerpj-meta/wiki>
+
 Main project link: <http://www.leaningtech.com/cheerpj>
 
 What is CheerpJ?
