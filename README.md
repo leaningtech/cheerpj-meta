@@ -1,7 +1,7 @@
 <p align="center"><img src="https://github.com/leaningtech/cheerpj-meta/blob/master/media/cheerpj_logo_whitebg.png" width="300"></p>
 
 # CheerpJ - Java to JavaScript compiler (Beta)
-[![Gitter chat](https://badges.gitter.im/leaningtech/cheerpj.svg)](https://badges.gitter.im/leaningtech/cheerpj)
+[![Gitter chat](https://badges.gitter.im/leaningtech/cheerpj.svg)](https://gitter.im/leaningtech/cheerpj)
 [![GitHub Issues](https://img.shields.io/github/issues/leaningtech/cheerpj-meta.svg)](https://github.com/leaningtech/cheerpj-meta/issues)
 [![Live Demos](https://img.shields.io/badge/demo-online-green.svg)](https://leaningtech.com/cheerpj/demos/)
 
