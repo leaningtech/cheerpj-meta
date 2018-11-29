@@ -7,7 +7,7 @@
 
 CheerpJ is a Java bytecode to JavaScript compiler, compatible with 100% of Java, which allows to compile any Java SE application, library or Java applet into a JavaScript application.
 
-Download latest version: [![Latest version](https://github.com/leaningtech/cheerpj-meta/blob/master/media/cheerpj-1.0-brightgreen.svg)](https://leaningtech.com/cheerpj/download/noncommercial/)
+Download latest version: [![Latest version](https://github.com/leaningtech/cheerpj-meta/blob/master/media/cheerpj-1.3-green.svg)](https://leaningtech.com/cheerpj/download/noncommercial/)
 
 Main documentation link: <https://github.com/leaningtech/cheerpj-meta/wiki>
 
