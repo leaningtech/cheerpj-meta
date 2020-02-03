@@ -1,17 +1,16 @@
 <p align="center"><img src="https://github.com/leaningtech/cheerpj-meta/blob/master/media/cheerpj_logo_whitebg.png" width="300"></p>
 
-# CheerpJ - Java to JavaScript compiler (Beta)
+# CheerpJ - Convert Java to WebAssembly and JavaScript
 [![Gitter chat](https://badges.gitter.im/leaningtech/cheerpj.svg)](https://gitter.im/leaningtech/cheerpj)
 [![GitHub Issues](https://img.shields.io/github/issues/leaningtech/cheerpj-meta.svg)](https://github.com/leaningtech/cheerpj-meta/issues)
-[![Live Demos](https://img.shields.io/badge/demo-online-green.svg)](https://leaningtech.com/cheerpj/demos/)
+[![Live Demos](https://img.shields.io/badge/demo-online-green.svg)](https://leaningtech.com/pages/cheerpj.html)
 
 CheerpJ is a Java bytecode to JavaScript compiler, compatible with 100% of Java, which allows to compile any Java SE application, library or Java applet into a JavaScript application.
 
-Download latest version: [![Latest version](https://img.shields.io/badge/cheerpj-1.4-green.svg)](https://leaningtech.com/cheerpj/download/noncommercial/)
+Download latest version: [![Latest version](https://img.shields.io/badge/cheerpj-2.0-green.svg)](https://leaningtech.com/pages/cheerpj.html#Download)
 
 Main documentation link: <https://github.com/leaningtech/cheerpj-meta/wiki>
-
-Main project link: <http://www.leaningtech.com/cheerpj>
+Main project link: <http://www.leaningtech.com/pages/cheerpj>
 
 What is CheerpJ?
 ------
@@ -44,7 +43,7 @@ To get started with CheerpJ, please refer to the following pages:
 
 Demos
 ------
-Several demos of CheerpJ can be found at https://leaningtech.com/cheerpj/demos/
+Several demos of CheerpJ can be found at https://leaningtech.com/pages/cheerpj.html
 
 Bugs and Questions
 -------
