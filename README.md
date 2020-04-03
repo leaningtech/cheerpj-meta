@@ -9,7 +9,7 @@ CheerpJ is a Java bytecode to WebAssembly and JavaScript compiler, compatible wi
 
 **Latest version**: [![Latest version](https://img.shields.io/badge/cheerpj-2.1-green.svg)](https://leaningtech.com/pages/cheerpj.html#Download)  [![Latest version changelog](https://img.shields.io/badge/2.1-changelog-green.svg)](Changelog)
 
-**Link to latest runtime**: ``https://cjrtnc.leaningtech.com/2.0/loader.js``
+**Link to latest runtime**: ``https://cjrtnc.leaningtech.com/2.1/loader.js``
 
 If you are unsure how to start, try our [[Tutorial]].
 
