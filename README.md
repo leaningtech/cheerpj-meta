@@ -38,9 +38,9 @@ Getting Started
 You can download CheerpJ for Linux, Windows and macOS on our website (https://leaningtech.com/pages/cheerpj.html)
 
 To get started with CheerpJ, please refer to the following pages:
-1. [CheerpJ Tutorial](Tutorial)
-2. [Getting Started](Getting-Started)
-3. [Command Line Options](Command-Line-Options)
+1. [CheerpJ Tutorial](https://github.com/leaningtech/cheerpj-meta/wiki/Tutorial)
+2. [Getting Started](https://github.com/leaningtech/cheerpj-meta/wiki/Getting-Started)
+3. [Command Line Options](https://github.com/leaningtech/cheerpj-meta/wiki/Command-Line-Options)
 
 Demos
 ------
