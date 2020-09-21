@@ -11,7 +11,7 @@ CheerpJ is a Java bytecode to WebAssembly and JavaScript compiler, compatible wi
 
 **Link to latest runtime**: ``https://cjrtnc.leaningtech.com/2.1/loader.js``
 
-If you are unsure how to start, try our [[Tutorial]].
+If you are unsure how to start, try our [Tutorial](https://github.com/leaningtech/cheerpj-meta/wiki/Tutorial).
 
 What is CheerpJ?
 ------
