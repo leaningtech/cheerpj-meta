@@ -3,15 +3,17 @@
 # CheerpJ - Convert Java to WebAssembly and JavaScript
 [![Gitter chat](https://badges.gitter.im/leaningtech/cheerpj.svg)](https://gitter.im/leaningtech/cheerpj)
 [![GitHub Issues](https://img.shields.io/github/issues/leaningtech/cheerpj-meta.svg)](https://github.com/leaningtech/cheerpj-meta/issues)
-[![Live Demos](https://img.shields.io/badge/demo-online-green.svg)](https://leaningtech.com/pages/cheerpj.html)
+[![Live Demos](https://img.shields.io/badge/demo-online-green.svg)](https://leaningtech.com/cheerpj/)
 
 CheerpJ is a Java bytecode to WebAssembly and JavaScript compiler, compatible with 100% of Java, which allows to compile any Java SE application, library or Java applet into a WebAssembly/JavaScript application.
 
-**Latest version**: [![Latest version](https://img.shields.io/badge/cheerpj-2.2-green.svg)](https://leaningtech.com/pages/cheerpj.html#Download)  [![Latest version changelog](https://img.shields.io/badge/2.2-changelog-green.svg)](Changelog)
+**Main project link**: <http://leaningtech.com/cheerpj/>
+
+**Download latest version**: [![Latest version](https://img.shields.io/badge/cheerpj-2.2-green.svg)](https://leaningtech.com/download-cheerpj/)  [![Latest version changelog](https://img.shields.io/badge/2.2-changelog-green.svg)](pages/Changelog)
 
 **Link to latest runtime**: ``https://cjrtnc.leaningtech.com/2.2/loader.js``
 
-If you are unsure how to start, try our [Tutorial](https://github.com/leaningtech/cheerpj-meta/wiki/Tutorial).
+If you are unsure how to start, try our [Tutorial](pages/Tutorial).
 
 What is CheerpJ?
 ------
@@ -35,20 +37,23 @@ What is unique about CheerpJ?
 
 Getting Started
 -------
-You can download CheerpJ for Linux, Windows and macOS on our website (https://leaningtech.com/pages/cheerpj.html)
+
+You can download CheerpJ for Linux, Windows and macOS on our website (https://leaningtech.com/cheerpj/)
 
 To get started with CheerpJ, please refer to the following pages:
-1. [CheerpJ Tutorial](https://github.com/leaningtech/cheerpj-meta/wiki/Tutorial)
-2. [Getting Started](https://github.com/leaningtech/cheerpj-meta/wiki/Getting-Started)
-3. [Command Line Options](https://github.com/leaningtech/cheerpj-meta/wiki/Command-Line-Options)
+1. [CheerpJ Tutorial](pages/Tutorial)
+2. [Getting Started](pages/Getting-Started)
+3. [Command Line Options](pages/Command-Line-Options)
 
 Demos
 ------
-Several demos of CheerpJ can be found at https://leaningtech.com/pages/cheerpj.html
+
+Several demos of CheerpJ can be found at https://leaningtech.com/demo/?cheerpjfilter
 
 
 Bugs and Questions
 -------
  
 We welcome any feedback and bug report on it through our [Issue Tracking](https://github.com/leaningtech/cheerpj-meta/issues).
+
 You can also find us on [Gitter](https://gitter.im/leaningtech/cheerpj).
