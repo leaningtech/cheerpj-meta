@@ -1,4 +1,12 @@
-# CheerpJ - Convert Java to WebAssembly and JavaScript
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+#layout: home
+title: CheerpJ - Convert Java to WebAssembly and JavaScript
+permalink: /
+---
+
 [![Gitter chat](https://badges.gitter.im/leaningtech/cheerpj.svg)](https://gitter.im/leaningtech/cheerpj)
 [![GitHub Issues](https://img.shields.io/github/issues/leaningtech/cheerpj-meta.svg)](https://github.com/leaningtech/cheerpj-meta/issues)
 [![Live Demos](https://img.shields.io/badge/demo-online-green.svg)](https://leaningtech.com/cheerpj/)

@@ -29,6 +29,8 @@ social_links:
   linkedin: leaning-technologies-Ltd
 
 download: "https://leaningtech.com/cheerpj-download/"
+licence: "https://leaningtech.com/cheerpj-licensing/"
+demo: "https://leaningtech.com/demo/?cheerpjfilter"
 
 # Build settings
 markdown: kramdown
@@ -48,7 +50,7 @@ website: https://leaningtech.com/cheerpj/
 issues: https://github.com/leaningtech/cheerpj-meta/issues
 chat: https://gitter.im/leaningtech/cheerpj
 blog: https://medium.com/leaningtech
-has_about: false
+has_about: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
