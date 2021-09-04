@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Cheerp - Documentation
+title: CheerpJ - Documentation
 description: >- # this means to ignore newlines until "baseurl:"
-  Main documentation and tutorials for Cheerp | the C++ compiler for the Web.
+  Main documentation and tutorials for CheerpJ | the Java solution for the Web.
 baseurl: "/cheerpj-meta" # the subpath of your site, e.g. /blog
-logo: "/assets/cheerj_logo.png"   # Change to relevant file
+logo: "/assets/cheerpj_logo.png"   # Change to relevant file
 tagline:
   line1: "CheerpJ - the Java solution for the Web"
   line2: "Documentation & Tutorials"
