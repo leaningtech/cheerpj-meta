@@ -44,7 +44,7 @@ The combined size of the .jar to be served (pruned of its bytecode) and of the r
 
 In Java there is no "dead code". Java supports reflection, so all code and classes can be potentially used at runtime. For this reason CheerpJ cannot automatically remove any code.
 
-This said, depending on the application, it is often possible to remove a lot of code using ProGuard: an industry standard open source tool. CheerpJ provides support to automatically generate a ProGuard configuration file to make sure that classes used via reflection are not removed. For more information see: [here](https://github.com/leaningtech/cheerpj-meta/wiki/Startup-time-optimization#use-proguard-to-remove-unused-code)
+This said, depending on the application, it is often possible to remove a lot of code using ProGuard: an industry standard open source tool. CheerpJ provides support to automatically generate a ProGuard configuration file to make sure that classes used via reflection are not removed. For more information see: [here](Startup-time-optimization#use-proguard-to-remove-unused-code)
 
 ## Can JavaScript code produced by Cheerp be plugged into Node.js?
 
@@ -85,4 +85,4 @@ Not yet. The main problem is that RuneScape requires low level network connectio
 
 ## What is the status of CheerpJ?
 
-CheerpJ 2.2, was released on 14th May, 2021. CheerpJ is actively developed by [Leaning Technologies Ltd](https://www.leaningtech.com), a British-Dutch company focused on compile-to-JavaScript and compile-to-WebAssembly solutions.
+CheerpJ 2.2, was released on 14th May, 2021. CheerpJ is actively developed by [Leaning Technologies Ltd](https://leaningtech.com), a British-Dutch company focused on compile-to-JavaScript and compile-to-WebAssembly solutions.

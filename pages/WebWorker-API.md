@@ -30,7 +30,7 @@ WebWorkers do not share any memory with the main threads, and all interactions h
 |JavaScript String                           |Supported in params, not return values      |
 |Any Java object                             |Not supported in params or return values    |
 
-Java arrays can either come from another Java method or they can be generated from a JS TypedArray using [cjTypedArrayToJava](https://github.com/leaningtech/cheerpj-meta/wiki/Runtime-API#cjtypedarraytojava).
+Java arrays can either come from another Java method or they can be generated from a JS TypedArray using [cjTypedArrayToJava](Runtime-API#cjtypedarraytojava).
 
 It is possible to move Java arrays from the main thread and others ```CheerpJWorker```s. Please note that Java arrays are not copied, but _transferred_ across contexts. This increases efficiency, but also means that the data is not available any more from the calling thread. If the data needs be preserved you must manually make a copy.
 

@@ -6,7 +6,7 @@ CheerpJ is very easy to use, this tutorial will guide you step by step into comp
 
 # Download and install CheerpJ
 
-Visit [our download page](https://www.leaningtech.com/pages/cheerpj.html#Download) and download the CheerpJ archive for your platform. CheerpJ is available for Linux, Mac OS X and Windows.
+Visit [our download page](https://leaningtech.com/download-cheerpj/) and download the CheerpJ archive for your platform. CheerpJ is available for Linux, Mac OS X and Windows.
 
 CheerpJ is distributed as an archive for all the platforms, you can unpack the archive anywhere in the system. During the tutorial we will assume that CheerpJ has been unpacked in the home directory and its root is ```~/cheerpj_2.2/```. Please keep in mind to use a different path in the following commands if you have chosen a different position or you are using a different version of CheerpJ.
 

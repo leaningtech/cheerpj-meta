@@ -42,7 +42,7 @@ When initialized with this option CheerpJ will keep track of the classes used at
 
 This smaller JAR is stripped of all original Java bytecode and can no longer be used to run the application on the JVM. The JAR is however necessary for CheerpJ to support Java reflection. 
 
-More details are available [here](https://github.com/leaningtech/cheerpj-meta/wiki/Command-Line-Options#--pack-jarpackjar)
+More details are available [here](Command-Line-Options#--pack-jarpackjar)
 
 # Preload resources
 
@@ -62,12 +62,12 @@ The result will look like this:
 
 ```["/lts/file1","/lt/file2"]``` 
 
-The JavaScript console may enclose the string between quotes (```"```), which you should ignore. See [here](https://github.com/leaningtech/cheerpj-meta/wiki/Runtime-API#cjgetruntimeresources) for more information.
+The JavaScript console may enclose the string between quotes (```"```), which you should ignore. See [here](Runtime-API#cjgetruntimeresources) for more information.
 
 2. Modify the CheerpJ integration to enable preloading. You will only need to change the ```cheerpjInit``` call, to pass the ```preloadResources``` option. For example: 
 
 ```cheerpjInit({preloadResources:["/lts/file1","/lt/file2"]});``` 
 
-See [here](https://github.com/leaningtech/cheerpj-meta/wiki/Runtime-API#preloadresources) for more information.
+See [here](Runtime-API#preloadresources) for more information.
 
 When preloading is enabled CheerpJ will be able to download multiple resources in parallel with the execution of the program. This will greatly improve loading time.

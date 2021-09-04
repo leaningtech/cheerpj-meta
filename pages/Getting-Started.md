@@ -4,7 +4,7 @@ title: Getting started
 
 This page will help you getting started with CheerpJ and converting your first Java application to JavaScript in no time.
 
-To start, make sure to download the latest available version of CheerpJ [here](http://www.leaningtech.com/pages/cheerpj.html#Download). Decompress the Cheerpj 2.2 archive anywhere, for example in ```~/cheerpj_2.2```.
+To start, make sure to download the latest available version of CheerpJ [here](http://leaningtech.com/download-cheerpj/). Decompress the Cheerpj 2.2 archive anywhere, for example in ```~/cheerpj_2.2```.
 
 **Important:** Converting an applet is documented at the bottom of this page.
 

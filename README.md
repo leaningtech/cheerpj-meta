@@ -9,7 +9,7 @@ permalink: /
 
 [![Gitter chat](https://badges.gitter.im/leaningtech/cheerpj.svg)](https://gitter.im/leaningtech/cheerpj)
 [![GitHub Issues](https://img.shields.io/github/issues/leaningtech/cheerpj-meta.svg)](https://github.com/leaningtech/cheerpj-meta/issues)
-[![Live Demos](https://img.shields.io/badge/demo-online-green.svg)](https://leaningtech.com/cheerpj/)
+[![Live Demos](https://img.shields.io/badge/demo-online-green.svg)](https://leaningtech.com/demo/?cheerpjfilter)
 
 CheerpJ is a Java bytecode to WebAssembly and JavaScript compiler, compatible with 100% of Java, which allows to compile any Java SE application, library or Java applet into a WebAssembly/JavaScript application.
 
