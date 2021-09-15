@@ -1,7 +1,5 @@
 ---
-#layout: home
 title: CheerpJ - Convert Java to WebAssembly and JavaScript
-permalink: /
 ---
 
 [![Gitter chat](https://badges.gitter.im/leaningtech/cheerpj.svg)](https://gitter.im/leaningtech/cheerpj)
