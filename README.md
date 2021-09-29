@@ -10,11 +10,11 @@ CheerpJ is a Java bytecode to WebAssembly and JavaScript compiler, compatible wi
 
 **Main project link**: <http://leaningtech.com/cheerpj/>
 
-**Download latest version**: [![Latest version](https://img.shields.io/badge/cheerpj-2.2-green.svg)](https://leaningtech.com/download-cheerpj/)  [![Latest version changelog](https://img.shields.io/badge/2.2-changelog-green.svg)](pages/Changelog)
+**Download latest version**: [![Latest version](https://img.shields.io/badge/cheerpj-2.2-green.svg)](https://leaningtech.com/download-cheerpj/)  [![Latest version changelog](https://img.shields.io/badge/2.2-changelog-green.svg)](Changelog)
 
 **Link to latest runtime**: ``https://cjrtnc.leaningtech.com/2.2/loader.js``
 
-If you are unsure how to start, try our [Tutorial](pages/Tutorial).
+If you are unsure how to start, try our [Tutorial](Tutorial).
 
 What is CheerpJ?
 ------
@@ -42,9 +42,9 @@ Getting Started
 You can download CheerpJ for Linux, Windows and macOS on our website (https://leaningtech.com/cheerpj/)
 
 To get started with CheerpJ, please refer to the following pages:
-1. [CheerpJ Tutorial](pages/Tutorial)
-2. [Getting Started](pages/Getting-Started)
-3. [Command Line Options](pages/Command-Line-Options)
+1. [CheerpJ Tutorial](Tutorial)
+2. [Getting Started](Getting-Started)
+3. [Command Line Options](Command-Line-Options)
 
 Demos
 ------
