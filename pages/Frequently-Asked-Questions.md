@@ -83,6 +83,12 @@ The cross origin message you see happens as part of our automatic bug reporting 
 
 Not yet. The main problem is that RuneScape requires low level network connections primitives (sockets) which are not provided by browsers at this time due to security concerns. In the future we might provide a paid add-on to the CheerpJ Applet Runner extension to support this use case via tunneling.
 
+## How can I use CheerpJ to generate WebAssembly code instead of Javascript?
+
+CheerpJ cannot be used to generate WebAssembly code at the moment.
+
+CheerpJ uses WebAssembly internally for some components of the runtime, but Java bytecode can only be compiled to JavaScript at this time since WebAssembly currently is not an efficient target for Java. CheerpJ will support WebAssembly output when the platform matures
+
 ## What is the status of CheerpJ?
 
 CheerpJ 2.2, was released on 14th May, 2021. CheerpJ is actively developed by [Leaning Technologies Ltd](https://leaningtech.com), a British-Dutch company focused on compile-to-JavaScript and compile-to-WebAssembly solutions.
