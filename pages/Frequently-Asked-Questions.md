@@ -87,7 +87,7 @@ Not yet. The main problem is that RuneScape requires low level network connectio
 
 CheerpJ cannot be used to generate WebAssembly code at the moment.
 
-CheerpJ uses WebAssembly internally for some components of the runtime, but Java bytecode can only be compiled to JavaScript at this time since WebAssembly currently is not an efficient target for Java. CheerpJ will support WebAssembly output when the platform matures
+CheerpJ uses WebAssembly internally for some components of the runtime, but Java bytecode can only be compiled to JavaScript at this time since WebAssembly currently is not an efficient target for Java. CheerpJ will support WebAssembly output when the platform matures.
 
 ## What is the status of CheerpJ?
 
