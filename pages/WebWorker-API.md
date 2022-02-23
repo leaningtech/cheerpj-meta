@@ -6,7 +6,7 @@ CheerpJ supports running Java code in the background using WebWorkers. To use th
 
 All code in a Worker runs in parallel and asynchronously with the main thread. All the methods below return standard JavaScript ```Promise```s, and you can use ```.then(...)```, ```.catch(...)``` and ```async/await``` with them.
 
-We recommend reading the [[Runtime API]] documentation before proceeding on this page.
+We recommend reading the [Runtime API](Runtime-API) documentation before proceeding on this page.
 
 ## Creating and initializing a CheerpJ worker
 
@@ -17,7 +17,7 @@ var w = new CheerpJWorker();
 w.cheerpjInit().then(function(e) { console.log("CheerpJWorker is ready"); });
 ```
 
-This starts the WebWorker and initializes CheerpJ in that context. All workers need to be initialized in this way. As a general rule the ```CheerpJWorker``` exposes the same API as CheerpJ in the main thread. You can read details about the main thread API in the [[Runtime API]] page.
+This starts the WebWorker and initializes CheerpJ in that context. All workers need to be initialized in this way. As a general rule the ```CheerpJWorker``` exposes the same API as CheerpJ in the main thread. You can read details about the main thread API in the [Runtime API](Runtime-API) page.
 
 ## Parameters and return values
 
