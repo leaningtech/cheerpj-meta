@@ -1,6 +1,14 @@
 ---
 title: Changelog
 ---
+version 3.3 - April 29th, 2022:
+
+	* Improved legacy code generation
+	* Improved clipboard support
+	* Improved exceptions for I/O handling
+	* Add proper support to Synchronized methods
+	* Made async fetch the default for any file
+	* Minor fixes to AWT components
 
 Version 2.2 - May 14th, 2021:
 
