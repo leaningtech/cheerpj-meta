@@ -1,7 +1,7 @@
 ---
 title: Changelog
 ---
-version 3.3 - April 29th, 2022:
+version 2.3 - April 29th, 2022:
 
 	* Improved legacy code generation
 	* Improved clipboard support
