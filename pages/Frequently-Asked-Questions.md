@@ -91,4 +91,4 @@ CheerpJ uses WebAssembly internally for some components of the runtime, but Java
 
 ## What is the status of CheerpJ?
 
-CheerpJ 2.2, was released on 14th May, 2021. CheerpJ is actively developed by [Leaning Technologies Ltd](https://leaningtech.com), a British-Dutch company focused on compile-to-JavaScript and compile-to-WebAssembly solutions.
+CheerpJ is actively developed by [Leaning Technologies Ltd](https://leaningtech.com), a British-Dutch company focused on compile-to-JavaScript and compile-to-WebAssembly solutions.

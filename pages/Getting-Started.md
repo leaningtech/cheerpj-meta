@@ -4,7 +4,7 @@ title: Getting started
 
 This page will help you getting started with CheerpJ and converting your first Java application to JavaScript in no time.
 
-To start, make sure to download the latest available version of CheerpJ [here](http://leaningtech.com/download-cheerpj/). Decompress the Cheerpj 2.2 archive anywhere, for example in ```~/cheerpj_2.2```.
+To start, make sure to download the latest available version of CheerpJ [here](https://leaningtech.com/download-cheerpj/). Decompress the Cheerpj 2.3 archive anywhere, for example in ```~/cheerpj_2.3```.
 
 **Important:** Converting an applet is documented at the bottom of this page.
 
@@ -15,7 +15,7 @@ To start, make sure to download the latest available version of CheerpJ [here](h
 The basic usage is very simple:
 
 ```
-~/cheerpj_2.2/cheerpjfy.py my_application_archive.jar
+~/cheerpj_2.3/cheerpjfy.py my_application_archive.jar
 ```
 
 This command will generate a file called ```my_application_archive.jar.js```, which needs to be deployed in the same folder  of the original .JAR archive, and hosted on a web server. Instructions on how to serve the converted JavaScript on a web page are provided below.
@@ -25,7 +25,7 @@ This command will generate a file called ```my_application_archive.jar.js```, wh
 **Note to Windows users:** You will need to have python3 installed on the system. Python provides a launcher called ```py``` that will automatically detect and use the right version of python for a given script. To use ```cheerpjfy.py``` on Windows you need to prefix all the commands with ```py```, for example:
 
 ```
-py c:\cheerpj_2.2\cheerpjfy.py application.jar
+py c:\cheerpj_2.3\cheerpjfy.py application.jar
 ```
 
 # Converting multiple JARs to JAR.JS's files
@@ -33,17 +33,17 @@ py c:\cheerpj_2.2\cheerpjfy.py application.jar
 If your JAR has any dependencies in the form of further JAR archives, the ```cheerpjfy.py``` command line must be modified as follows:
 
 ```
-~/cheerpj_2.2/cheerpjfy.py --deps my_dependency_archive.jar my_application_archive.jar
+~/cheerpj_2.3/cheerpjfy.py --deps my_dependency_archive.jar my_application_archive.jar
 ```
 
-This command will generate ```my_application_archive.jar.js``` but **not** ```my_dependency_archive.jar.js```. Each archive should be compiled separately by invoking ```~/cheerpj_2.2/cheerpjfy.py my_dependency_archive.jar```.
+This command will generate ```my_application_archive.jar.js``` but **not** ```my_dependency_archive.jar.js```. Each archive should be compiled separately by invoking ```~/cheerpj_2.3/cheerpjfy.py my_dependency_archive.jar```.
 
 It is in general safe to put the target JAR in the ```--deps``` list, although it is not required. If you have an application composed of many JARs you can do something like this:
 
 ```
 for f in one.jar two.jar three.jar
 do
-    ~/cheerpj_2.2/cheerpjfy.py --deps one.jar:two.jar:three.jar $f
+    ~/cheerpj_2.3/cheerpjfy.py --deps one.jar:two.jar:three.jar $f
 done
 ```
 
@@ -55,7 +55,7 @@ done
   <head>
     <meta charset="utf-8">
     <title>CheerpJ test</title>
-    <script src="https://cjrtnc.leaningtech.com/2.2/loader.js"></script>
+    <script src="https://cjrtnc.leaningtech.com/2.3/loader.js"></script>
   </head>
   <body>
   </body>
@@ -70,7 +70,7 @@ This page will initialize the CheerpJ system, create a graphical environment to 
 
 You can now serve this web page on a simple http server, such as the http-server utility.
 ```
-http-server ~/cheerpj_2.2/
+http-server ~/cheerpj_2.3/
 ```
 
 # Converting an applet
@@ -80,7 +80,7 @@ Applets can be run by Chrome users using the [CheerpJ Applet Runner](https://chr
 To support all browsers, you can add the following tags to your page:
 
 ```
-<script src="https://cjrtnc.leaningtech.com/2.2/loader.js"></script>
+<script src="https://cjrtnc.leaningtech.com/2.3/loader.js"></script>
 <script>cheerpjInit({enablePreciseAppletArchives:true});</script>
 ```
 
@@ -96,7 +96,7 @@ To avoid potential conflicts with native Java we recommend replacing the origina
     <head>
         <meta charset="utf-8">
         <title>CheerpJ applet test</title>
-        <script src=" https://cjrtnc.leaningtech.com/2.2/loader.js"></script>
+        <script src=" https://cjrtnc.leaningtech.com/2.3/loader.js"></script>
         <script>cheerpjInit({enablePreciseAppletArchives:true});</script>
     </head>
     <body>

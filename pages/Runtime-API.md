@@ -14,7 +14,7 @@ A basic HTML file to load a CheerpJ application will look as follows:
   <head>
     <meta charset="utf-8">
     <title>CheerpJ test</title>
-    <script src="https://cjrtnc.leaningtech.com/2.2/loader.js"></script>
+    <script src="https://cjrtnc.leaningtech.com/2.3/loader.js"></script>
   </head>
   <body>
   </body>
@@ -30,7 +30,7 @@ A basic HTML file to load a CheerpJ application will look as follows:
 
 To load the most recent runtime, use the following link:
 ```html
-<script src="https://cjrtnc.leaningtech.com/2.2/loader.js"></script>
+<script src="https://cjrtnc.leaningtech.com/2.3/loader.js"></script>
 ```
 
 More in general, you can use this line:
