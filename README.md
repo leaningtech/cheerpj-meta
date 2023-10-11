@@ -20,4 +20,4 @@ With CheerpJ, you can:
 
 ## Licensing
 
-CheerpJ is free for non-commerical use and technical evaluation. See [licensing](https://cheerpj.com/licensing/) for details.
+CheerpJ is free for non-commerical use and technical evaluation. See [licensing](https://leaningtech.com/cheerpj-licensing/) for details.
