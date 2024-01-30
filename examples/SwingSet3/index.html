@@ -3,7 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SwingSet3 (CheerpJ)</title>
+    <script src="https://cjrtnc.leaningtech.com/3.0rc2/cj3loader.js"></script>
+    <style>
+      html, body {
+        margin: 0;
+      }
+
+      #container {
+        width: 100vw;
+        height: 100svh;
+      }
+    </style>
   </head>
   <body>
+    <div id="container"></div>
+    <script type="module">
+      await cheerpjInit();
+      cheerpjCreateDisplay(-1, -1, document.getElementById("container"));
+      await cheerpjRunJar("/app/SwingSet3.jar");
+    </script>
   </body>
 </html>
