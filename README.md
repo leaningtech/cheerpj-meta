@@ -56,7 +56,7 @@ Both are written in C++ and are compiled to WebAssembly & JavaScript using [Chee
 
 ## Licensing
 
-CheerpJ is free for personal use and technical evaluation. See [licensing](/cheerpj3/licensing) for details.
+CheerpJ is free for personal use and technical evaluation. See [licensing](https://labs.leaningtech.com/cheerpj3/licensing) for details.
 
 ## Demos
 
