@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Browser</title>
+    <script src="https://cjrtnc.leaningtech.com/3.0rc2/cj3loader.js"></script>
+  </head>
+  <body>
+    <script>
+      (async function () {
+        await cheerpjInit({
+        tailscaleAuthKey:"PasteYourKeyHere",
+       
+      });
+        cheerpjCreateDisplay(800, 600);
+        await cheerpjRunJar("/app/SwingHTMLBrowser.jar");
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Server</title>
+    <script src="https://cjrtnc.leaningtech.com/3.0rc2/cj3loader.js"></script>
+  </head>
+  <body>
+    <input type="text" id="ip"></input>
+    <script>
+      (async function () {
+        await cheerpjInit({
+          tailscaleAuthKey: "PasteYourKeyHere",
+          tailscaleIpCb: (ip) => {
+            let el = document.querySelector("#ip");
+            el.value = ip;
+          },
+        });
+        cheerpjCreateDisplay(800, 600);
+        await cheerpjRunJar("/app/Server.jar");
+      })();
+    </script>
+  </body>
+</html>
