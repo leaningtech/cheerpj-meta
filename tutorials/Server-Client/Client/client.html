@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Client</title>
+    <script src="https://cjrtnc.leaningtech.com/3.0rc2/cj3loader.js"></script>
+  </head>
+  <body>
+    <input type="text" id="ip"></input>
+    <script>
+      async function start(ip) {
+        await cheerpjInit({
+          tailscaleAuthKey: "PasteYourKeyHere",
+        });
+        cheerpjCreateDisplay(800, 600);
+        await cheerpjRunJar("/app/Client.jar", ip);
+      };
+      let el = document.querySelector("#ip");
+      el.addEventListener("keydown", (e) => {
+        if (e.key == "Enter") {
+          start(el.value);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>FoilSim applet (CheerpJ)</title>
+  <script src="https://cjrtnc.leaningtech.com/3.0rc2/cj3loader.js"></script>
+</head>
+<style>
+  div {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 50px;
+  }
+  h5 {
+    margin-top: 20px;
+  }
+</style>
+
+<body>
+  <div>
+    <h1>Applet example with CheerpJ</h1>
+    <div>
+      <cheerpj-applet archive="FoilSim.jar" code="Foil.class" height="450" width="950">
+        Your browser cannot handle the applet tag!
+      </cheerpj-applet>
+    </div>
+    <h5>
+      The applet shown in this example belongs to the NASA's <a
+        href="https://www.grc.nasa.gov/WWW/K-12/airplane/">Beginner's Guide to Aeronautics</a> and it is available at
+      their <a href="https://github.com/nasa/BGA/tree/main">GitHub repository</a>.
+    </h5>
+    <h5>Applet is running with <a href="https://labs.leaningtech.com/cheerpj3">CheerpJ</a> by <a
+        href="https://leaningtech.com/">©Leaning Technologies</a></h5>
+  </div>
+  <script type="module">
+    await cheerpjInit();
+  </script>
+</body>
+
+</html>
