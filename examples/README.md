@@ -1,6 +1,6 @@
 # CheerpJ tutorials
 
-This repository holds a collection of the CheerpJ tutorials available on [our documentation website](https://labs.leaningtech.com/cheerpj3/examples). These examples will help you to put hands-on simple projects with CheerpJ and run a variety of Java applets and applications in the browser, including those that require networking. 
+This repository holds a collection of the CheerpJ examples available on [our documentation website](https://labs.leaningtech.com/cheerpj3/examples). These examples will help you to put hands-on simple projects with CheerpJ and run a variety of Java applets and applications in the browser, including those that require networking. 
 
 
 
