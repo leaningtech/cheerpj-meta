@@ -24,13 +24,20 @@ Java Web Start / JNLP applications in the browser without plugins.
 
 With CheerpJ, you can:
 
-- Run existing **Java applications** in the browser with no changes
-- Include **Java applets** in webpages without legacy plugins
-- Migrate **Java Web Start / JNLP** applications to work on modern systems
-- Use **Java libraries** in JavaScript/TypeScript seamlessly
+- Run existing [Java applications] in the browser with no changes
+- Include [Java applets] in webpages without legacy plugins
+- Migrate [Java Web Start / JNLP] applications to work on modern systems
+- Use [Java libraries] in JavaScript/TypeScript seamlessly
 - Interoperate between Java and JavaScript libraries
 
-CheerpJ is based on a full OpenJDK runtime environment. It supports reflection, custom classloaders, networking, file access, clipboard, audio, printing, Swing, and AWT.
+CheerpJ is based on a full OpenJDK runtime environment and supports:
+
+- [Networking]
+- [Virtualized filesystem]
+- [Clipboard]
+- Audio
+- Printing
+- Swing/ AWT
 
 [Get started](https://labs.leaningtech.com/cheerpj3/getting-started)  
 
@@ -74,3 +81,12 @@ We have a vibrant Discord community where you can ask questions, share your proj
 [Follow us on Twitter](https://twitter.com/leaningtech)  
 
 [^compat]: CheerpJ has been tested on Oracle Forms, EBS, Swing, AWT, and numerous frameworks and libraries. It should be able to run Java SE applications that you would otherwise need a Java Runtime Environment for.
+
+
+[Java applications]: https://labs.leaningtech.com/cheerpj3/getting-started/Java-app
+[Java applets]: https://labs.leaningtech.com/cheerpj3/getting-started/Java-applet
+[Java Web Start / JNLP]: https://labs.leaningtech.com/cheerpj3/getting-started/JNLP
+[Java libraries]: https://labs.leaningtech.com/cheerpj3/getting-started/Java-library
+[Networking]: https://labs.leaningtech.com/cheerpj3/guides/Networking
+[Virtualized filesystem]: https://labs.leaningtech.com/cheerpj3/guides/File-System-support
+[Clipboard]: https://labs.leaningtech.com/cheerpj3/reference/cheerpjInit#clipboardmode
