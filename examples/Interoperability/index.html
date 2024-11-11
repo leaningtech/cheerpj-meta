@@ -9,10 +9,13 @@
 
 <body>
     <h1>CheerpJ Java Interoperability Tutorial</h1>
-    <input type="text" id="inputText" placeholder="Type something here">
-    <button onclick="sendInputToJava()">Send to Java</button>
-    <div id="javaOutput" style="margin-top:20px; font-weight: bold;">JavaScript received: </div>
-    </br>
+
+    <!-- Wrap the input, button, and output in a div with an initial hidden style -->
+    <div id="inputDiv" style="display: none;">
+        <input type="text" id="inputText" placeholder="Type something here">
+        <button onclick="sendInputToJava()">Send to Java</button>
+        <div id="javaOutput" style="margin-top:20px; font-weight: bold;">JavaScript received: </div>
+    </div>
 
     <script>
         let exampleInstance;
@@ -27,6 +30,10 @@
             console.log(window.myApplication);
             console.log(myApplication);
             console.log("setting application");
+
+            // Make the inputDiv visible after initialization
+            document.getElementById('inputDiv').style.display = 'block';
+
             /* This makes the function 'never' return */
             return new Promise(() => { });
         }
@@ -35,19 +42,22 @@
             await cheerpjInit(
                 {
                     version: 8,
-                    natives: { 
-                        Java_com_example_Example_sendToHTML, 
-                        Java_com_example_Example_nativeSetApplication 
+                    natives: {
+                        Java_com_example_Example_sendToHTML,
+                        Java_com_example_Example_nativeSetApplication
                     }
                 }
             );
             cheerpjCreateDisplay(400, 300);
 
-            await cheerpjRunJar('/app/example.jar');
+            // here we use the path '/app/Interoperability/example.jar' for deployment on the cloud
+            // use the path '/app/example.jar' for local deployment
+            // await cheerpjRunJar('/app/example.jar');
+            await cheerpjRunJar('/app/Interoperability/example.jar');
+
         })();
 
         async function sendInputToJava() {
-
             // Get the input text from the HTML input box
             const inputText = document.getElementById("inputText").value;
             console.log(inputText);
@@ -55,7 +65,6 @@
             // Call the Java method with the input text
             const response = await window.myApplication.processInput(inputText);
             window.alert(response);
-
         }
     </script>
 </body>
