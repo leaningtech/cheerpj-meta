@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CheerpJ test</title>
+    <script src="https://cjrtnc.leaningtech.com/3_20241017_546/cj3loader.js"></script>
+</head>
+
+<body>
+    <h1>CheerpJ Java Interoperability Tutorial</h1>
+    <input type="text" id="inputText" placeholder="Type something here">
+    <button onclick="sendInputToJava()">Send to Java</button>
+    <div id="javaOutput" style="margin-top:20px; font-weight: bold;">JavaScript received: </div>
+    </br>
+
+    <script>
+        let exampleInstance;
+
+        async function Java_com_example_Example_sendToHTML(lib, str) {
+            document.getElementById('javaOutput').innerText = "JavaScript received: " + str;
+            console.log("Received input from Java: " + str);
+        }
+
+        async function Java_com_example_Example_nativeSetApplication(lib, myApplication) {
+            window.myApplication = myApplication;
+            console.log(window.myApplication);
+            console.log(myApplication);
+            console.log("setting application");
+            /* This makes the function 'never' return */
+            return new Promise(() => { });
+        }
+
+        (async () => {
+            await cheerpjInit(
+                {
+                    version: 8,
+                    natives: { 
+                        Java_com_example_Example_sendToHTML, 
+                        Java_com_example_Example_nativeSetApplication 
+                    }
+                }
+            );
+            cheerpjCreateDisplay(400, 300);
+
+            await cheerpjRunJar('/app/example.jar');
+        })();
+
+        async function sendInputToJava() {
+
+            // Get the input text from the HTML input box
+            const inputText = document.getElementById("inputText").value;
+            console.log(inputText);
+
+            // Call the Java method with the input text
+            const response = await window.myApplication.processInput(inputText);
+            window.alert(response);
+
+        }
+    </script>
+</body>
+
+</html>
