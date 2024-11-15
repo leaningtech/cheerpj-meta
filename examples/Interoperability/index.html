@@ -50,7 +50,7 @@
             );
             cheerpjCreateDisplay(400, 300);
 
-            // here we use the path '/app/Interoperability/example.jar' for deployment on the cloud
+            // here we use the path '/app/cheerpj-meta/examples/Interoperability/example.jar' for deployment on the cloud
             // use the path '/app/example.jar' for local deployment
             // await cheerpjRunJar('/app/example.jar');
             await cheerpjRunJar('/app/cheerpj-meta/examples/Interoperability/example.jar');
@@ -64,7 +64,6 @@
 
             // Call the Java method with the input text
             const response = await window.myApplication.processInput(inputText);
-            window.alert(response);
         }
     </script>
 </body>
