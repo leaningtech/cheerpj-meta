@@ -15,7 +15,7 @@ Java Web Start / JNLP applications in the browser without plugins.
 [Discord server](https://discord.leaningtech.com)  
 
 ```html
-<script src="https://cjrtnc.leaningtech.com/3.0/cj3loader.js"></script>
+<script src="https://cjrtnc.leaningtech.com/3.1/cj3loader.js"></script>
 ```
 
 ![](assets/explanation-diagram.webp)
