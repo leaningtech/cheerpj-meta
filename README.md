@@ -77,8 +77,8 @@ CheerpJ is used in production by teams at NASA, Siemens, UBS, and [many others](
 
 We have a vibrant Discord community where you can ask questions, share your projects, and get community support.
 
-[Join the Discord server](https://discord.leaningtech.com)  
-[Follow us on Twitter](https://twitter.com/leaningtech)  
+[Join the Discord server](https://discord.leaningtech.com)
+[Follow us on X](https://x.com/leaningtech)
 
 [^compat]: CheerpJ has been tested on Oracle Forms, EBS, Swing, AWT, and numerous frameworks and libraries. It should be able to run Java SE applications that you would otherwise need a Java Runtime Environment for.
 
