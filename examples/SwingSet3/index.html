@@ -21,7 +21,7 @@
     <script type="module">
       await cheerpjInit();
       cheerpjCreateDisplay(-1, -1, document.getElementById("container"));
-      await cheerpjRunJar("/app/SwingSet3.jar");
+      await cheerpjRunJar(`/app${location.pathname}SwingSet3.jar`);
     </script>
   </body>
 </html>
