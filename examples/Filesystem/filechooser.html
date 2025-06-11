@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CheerpJ File Download</title>
+        <script src="https://cjrtnc.leaningtech.com/4.0/loader.js"></script>
+    </head>
+    <body>
+        <div class="cheerpj-display"></div>
+
+        <script>
+            // JavaScript implementation of the native method
+            // The naming convention is Java_<fully-qualified-class-name>_<method-name>
+            async function Java_com_filechooser_FileChooserDownloadExample_downloadFileFromCheerpJ(
+                lib, // CheerpJ's internal library object
+                fileName // The file name passed from Java
+            ) {
+                console.log(`Attempting to download file: ${fileName}`);
+                try {
+                    // 3. Use cjFileBlob() to get the file content as a Blob
+                    const blob = await cjFileBlob(`${fileName}`);
+                    const link = document.createElement("a");
+                    link.href = URL.createObjectURL(blob);
+                    // link.download = fileName; // Set the downloaded file name
+                    // Set the downloaded file name as the last part of the path
+                    link.download = fileName.split('/').pop(); // Extract the file name from the path
+                    document.body.appendChild(link); // Append to body to make it clickable
+                    link.click(); // Programmatically click the link to trigger download
+                    document.body.removeChild(link); // Clean up
+                    URL.revokeObjectURL(link.href); // Release the object URL
+                    console.log(`Successfully downloaded ${fileName}`);
+                } catch (e) {
+                    console.error("Error downloading file:", e);
+                    alert("Failed to download file. Check console for details.");
+                }
+            }
+
+            // Initialize CheerpJ and run the Java application
+            async function cj3init() {
+                try {
+                    await cheerpjInit({
+                        version: 8,
+                        // Register the native method
+                        natives: {
+                            Java_com_filechooser_FileChooserDownloadExample_downloadFileFromCheerpJ,
+                        },
+                    });
+                    cheerpjCreateDisplay(
+                        450,
+                        300,
+                        document.querySelector(".cheerpj-display")
+                    );
+                    
+                    // Here we use the path '/app/cheerpj-meta/examples/Filesystem/filechooser.jar' for deployment on the cloud
+                    // Use the path '/app/filechooser.jar' for local deployment
+                    await cheerpjRunJar("/app/cheerpj-meta/examples/Filesystem/filechooser.jar");
+                } catch (e) {
+                    console.error("CheerpJ initialization error:", e);
+                    alert(
+                        "Failed to load CheerpJ application. Check console for details."
+                    );
+                }
+            }
+            cj3init();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Load File from JS to Java</title>
+        <script src="https://cjrtnc.leaningtech.com/4.0/loader.js"></script>
+    </head>
+    <body>
+        <div class="container" style="max-width: 500px;">
+            <h2>Add String File to /str/ (from JavaScript)</h2>
+            <p>
+                Enter content and a file name to add a file directly to the
+                <code>/str/</code> mounting point from JavaScript. Your Java
+                application can then read this file.
+            </p>
+            <textarea
+                id="jsFileContent"
+                placeholder="Enter content for the file..."
+            >
+This content was loaded from JavaScript!
+            </textarea>
+            <input
+                type="text"
+                id="jsFileName"
+                value="test.txt"
+                placeholder="Enter file name (e.g., test.txt)"
+            />
+            <button onclick="addStringFileToCheerpJ()">Add File to /str/</button>
+            <div id="jsMessage"></div>
+
+            <div class="cheerpj-display"></div>
+
+            <script>
+                // Function to add a string file to /str/ from JavaScript
+                async function addStringFileToCheerpJ() {
+                    const fileName =
+                        document.getElementById("jsFileName").value.trim() ||
+                        "default.txt";
+                    const content =
+                        document.getElementById("jsFileContent").value ||
+                        "Default content.";
+                    const messageDiv = document.getElementById("jsMessage");
+
+                    try {
+                        // Using cheerpjAddStringFile to add content to /str/
+                        await cheerpjAddStringFile("/str/" + fileName, content);
+                        messageDiv.textContent = `File "${fileName}" added successfully to /str/.`;
+                        console.log(`File "${fileName}" added to /str/.`);
+
+                    } catch (e) {
+                        messageDiv.textContent = `Error adding file to /str/: ${e.message}`;
+                        console.error("Error writing file to /str/:", e);
+                    }
+                }
+
+                // Initialize CheerpJ and run the Java application
+                async function cj3init() {
+
+                    await cheerpjInit({
+                        version: 8,
+                    });
+
+                    cheerpjCreateDisplay(450, 300, document.querySelector(".cheerpj-display"));
+                    
+                    // Here we use the path '/app/cheerpj-meta/examples/Filesystem/filereader.jar' for deployment on the cloud
+                    // Use the path '/app/filereader.jar' for local deployment
+                    await cheerpjRunJar("/app/cheerpj-meta/examples/Filesystem/filereader.jar");
+                }
+                cj3init();
+            </script>
+        </div>
+    </body>
+</html>
