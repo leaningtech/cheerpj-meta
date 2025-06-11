@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>CheerpJ Java Download Tutorial - Applet</title>
+    <script src="https://cjrtnc.leaningtech.com/4.1/loader.js"></script>
+    <style>
+        body { font-family: sans-serif; margin: 20px; text-align: center;}
+        h1 { margin-bottom: 30px; }
+        cheerpj-applet { display: block; margin: 0 auto; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>CheerpJ Java Download Tutorial - Applet</h1>
+
+    <p>This example demonstrates various ways a Java Applet can initiate file downloads when running with CheerpJ.</p>
+
+    <cheerpj-applet
+          archive="AppletExample.jar"
+          code="AppletExample.AppletExample.class"
+          height="300"
+          width="400"
+        >
+        </cheerpj-applet>   
+
+    <script>
+        // JavaScript function to handle download initiated by showDocument() from Java
+        function downloadFromJava(encodedContent) {
+            const content = decodeURIComponent(encodedContent);
+            const blob = new Blob([content], { type: "text/plain" });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "showDocument_download.txt";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            console.log("File downloaded via showDocument (JS)");
+        }
+
+        // JavaScript implementation for the Java native method
+        async function Java_AppletExample_AppletExample_downloadFromJS() {
+            console.log("Java native method called: Triggering download from JavaScript.");
+            const content = "This file was created in Java and downloaded via a CheerpJ native JavaScript method.";
+            const blob = new Blob([content], { type: "text/plain" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "java-native-method-download.txt";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            console.log("File downloaded via native method.");
+        }
+
+        (async () => {
+            await cheerpjInit({
+                version: 8,
+                // Register the native method defined in Java
+                natives: {
+                    Java_AppletExample_AppletExample_downloadFromJS
+                }
+            });
+            console.log("CheerpJ Applet initialized.");
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheerpJ Filesystem Tutorial</title>
+    <script src="https://cjrtnc.leaningtech.com/4.1/loader.js"></script>
+    <style>
+        body { font-family: sans-serif; margin: 20px; display: flex; flex-direction: column; align-items: center; }
+        .container { max-width: 800px; width: 100%; margin: 0 auto; text-align: center; }
+        .cheerpj-display { border: 1px solid #ccc; margin-top: 10px; display: inline-block; } /* Center the display */
+        button { padding: 8px 15px; cursor: pointer; }
+        input[type="text"], textarea { width: 100%; padding: 10px; border: 1px solid #ddd; box-sizing: border-box; }
+        .message { background-color: #e6ffe6; border: 1px solid #b3ffb3; padding: 10px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>CheerpJ Filesystem Tutorial</h2>
+
+        <p>This example demonstrates how a regular Java application can interact with the CheerpJ virtual filesystem. You'll see how to write files to the <code>/files/</code> mounting point, read files from the <code>/str/</code> mounting point, and download them to your local system.</p>
+
+        <h3>Add String File to /str/ (from JavaScript)</h3>
+        <p>Use this section to add a file directly to the <code>/str/</code> mounting point from JavaScript. Your Java application can then read this file.</p>
+        <textarea id="jsFileContent" placeholder="Enter content for the file to be added to /str/... (default: This is a test file added by cheerpOS.)"></textarea>
+        <div style="display: flex; align-items: baseline; gap: 10px;">
+            <input type="text" id="jsFileName" placeholder="Enter file name (default: test.txt)">
+            <button onclick="addStringFileToCheerpJ()" style="width: 40%;">Add File to /str/</button>
+        </div>
+        <div id="jsMessage" class="message" style="display:none;"></div>
+
+        <div class="cheerpj-display"></div>
+
+        <script>
+            // 1. Native method implementation: downloads a file from the CheerpJ virtual filesystem
+            async function Java_FilesystemExample_FilesystemExample_downloadFile(lib, mountPoint, fileName) {
+                console.log(`Attempting to download ${mountPoint}${fileName}`);
+                try {
+                    const blob = await cjFileBlob(mountPoint + fileName);
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = fileName;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(link.href);
+                    console.log(`Successfully downloaded ${fileName}`);
+                } catch (e) {
+                    console.error("Error downloading file:", e);
+                    alert("Failed to download file. Check console for details.");
+                }
+            }
+
+            // 2. Function to add a string file to /str/ from JavaScript
+            async function addStringFileToCheerpJ() {
+                const fileName = document.getElementById('jsFileName').value.trim() || "test.txt";
+                const content = document.getElementById('jsFileContent').value || "This is a test file added by cheerpOS.";
+                const messageDiv = document.getElementById('jsMessage');
+
+                try {
+                    await cheerpjAddStringFile("/str/" + fileName, content);
+                    messageDiv.textContent = `File "${fileName}" added successfully to /str/.`;
+                    messageDiv.style.display = 'block';
+                    console.log(`File "${fileName}" added to /str/.`);
+                } catch (e) {
+                    messageDiv.textContent = `Error adding file to /str/: ${e.message}`;
+                    messageDiv.style.display = 'block';
+                    console.error("Error writing file to /str/:", e);
+                }
+            }
+
+            // 3. Initialize CheerpJ and run the Java application
+            async function cj3init() {
+                try {
+                    await cheerpjInit({
+                        version: 8,
+                        natives: {Java_FilesystemExample_FilesystemExample_downloadFile}
+                    });
+                    // Create display within the div
+                    cheerpjCreateDisplay(450, 500, document.querySelector('.cheerpj-display'));
+                    // Here we use the path '/app/cheerpj-meta/examples/Filesystem/' for deployment on the cloud
+                    // Use the path '/app/' for local deployment:
+                    // - with cheerpjRunJar: await cheerpjRunJar('/app/FilesystemExample.jar');
+                    // - with cheerpjRunMain: await cheerpjRunMain("FilesystemExample.FilesystemExample", "/app/");
+                    await cheerpjRunJar("/app/cheerpj-meta/examples/Filesystem/FilesystemExample.jar");
+                } catch (e) {
+                    console.error("CheerpJ initialization error:", e);
+                    alert("Failed to load CheerpJ application. Check console for details.");
+                }
+            }
+            cj3init();
+        </script>
+    </div>
+</body>
+</html>
