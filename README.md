@@ -1,6 +1,6 @@
 <h1><img src="assets/logotype.svg" alt="CheerpJ" height="96"></h1>
 
-[![Version](https://img.shields.io/badge/version-3.0-orange)](https://labs.leaningtech.com/cheerpj3)
+[![Version](https://img.shields.io/badge/version-4.3-orange)](https://labs.leaningtech.com/cheerpj3)
 [![Discord server](https://img.shields.io/discord/988743885121548329?color=%237289DA&logo=discord&logoColor=ffffff)](https://discord.leaningtech.com)
 [![GitHub Issues](https://img.shields.io/github/issues/leaningtech/cheerpj-meta.svg)](https://github.com/leaningtech/cheerpj-meta/issues)
 
@@ -15,7 +15,7 @@ Java Web Start / JNLP applications in the browser without plugins.
 [Discord server](https://discord.leaningtech.com)  
 
 ```html
-<script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
+<script src="https://cjrtnc.leaningtech.com/4.3/loader.js"></script>
 ```
 
 ![](assets/explanation-diagram.webp)
