@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>CheerpJ Java Interoperability Tutorial</title>
-    <!-- Add the CheerpJ loader script -->
+    <script src="https://cjrtnc.leaningtech.com/4.3/loader.js"></script>
 </head>
 
 <body>
@@ -12,31 +12,59 @@
 
     <!-- Wrap the input, button, and output in a div with an initial hidden style -->
     <div id="inputDiv" style="display: none;">
-        <p>Enter some text in the input box below and click the button to send it to Java.</p>
-        
         <input type="text" id="inputText" placeholder="Type something here">
         <button onclick="sendInputToJava()">Send to Java</button>
         <div id="javaOutput" style="margin-top:20px; font-weight: bold;">JavaScript received: </div>
     </div>
 
     <script>
-        // Step 1: Add native JS implementations for interacting with Java methods
+        let exampleInstance;
 
-        // Example function
-        // async function Java_com_example_Example_sendToHTML(lib, str) {
-        //     // Update the UI with the received string
-        // }
+        async function Java_com_example_Example_sendToHTML(lib, str) {
+            document.getElementById('javaOutput').innerText = "JavaScript received: " + str;
+            console.log("Received input from Java: " + str);
+        }
 
-        // Step 2: Add initialization for CheerpJ
-        // Example:
-        // (async () => {
-        //     await cheerpjInit({ /*...*/ });
-        // })();
+        async function Java_com_example_Example_nativeSetApplication(lib, myApplication) {
+            window.myApplication = myApplication;
+            console.log(window.myApplication);
+            console.log(myApplication);
+            console.log("setting application");
 
-        // Step 3: Define a function to send input to Java
-        // Example:
-        // async function sendInputToJava() { /*...*/ }
+            // Make the inputDiv visible after initialization
+            document.getElementById('inputDiv').style.display = 'block';
 
+            /* This makes the function 'never' return */
+            return new Promise(() => { });
+        }
+
+        (async () => {
+            await cheerpjInit(
+                {
+                    version: 8,
+                    natives: {
+                        Java_com_example_Example_sendToHTML,
+                        Java_com_example_Example_nativeSetApplication
+                    }
+                }
+            );
+            cheerpjCreateDisplay(400, 300);
+
+            // here we use the path '/app/cheerpj-meta/examples/Interoperability/example.jar' for deployment on the cloud
+            // use the path '/app/example.jar' for local deployment
+            // await cheerpjRunJar('/app/example.jar');
+            await cheerpjRunJar('/app/cheerpj-meta/examples/Interoperability/example.jar');
+
+        })();
+
+        async function sendInputToJava() {
+            // Get the input text from the HTML input box
+            const inputText = document.getElementById("inputText").value;
+            console.log(inputText);
+
+            // Call the Java method with the input text
+            const response = await window.myApplication.processInput(inputText);
+        }
     </script>
 </body>
 

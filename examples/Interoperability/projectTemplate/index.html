@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CheerpJ Java Interoperability Tutorial</title>
+    <!-- Add the CheerpJ loader script -->
+</head>
+
+<body>
+    <h1>CheerpJ Java Interoperability Tutorial</h1>
+
+    <!-- Wrap the input, button, and output in a div with an initial hidden style -->
+    <div id="inputDiv" style="display: none;">
+        <p>Enter some text in the input box below and click the button to send it to Java.</p>
+        
+        <input type="text" id="inputText" placeholder="Type something here">
+        <button onclick="sendInputToJava()">Send to Java</button>
+        <div id="javaOutput" style="margin-top:20px; font-weight: bold;">JavaScript received: </div>
+    </div>
+
+    <script>
+        // Step 1: Add native JS implementations for interacting with Java methods
+
+        // Example function
+        // async function Java_com_example_Example_sendToHTML(lib, str) {
+        //     // Update the UI with the received string
+        // }
+
+        // Step 2: Add initialization for CheerpJ
+        // Example:
+        // (async () => {
+        //     await cheerpjInit({ /*...*/ });
+        // })();
+
+        // Step 3: Define a function to send input to Java
+        // Example:
+        // async function sendInputToJava() { /*...*/ }
+
+    </script>
+</body>
+
+</html>
