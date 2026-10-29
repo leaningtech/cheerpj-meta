@@ -1,8 +1,6 @@
 <p align="center">
-  <a href="https://cheerpj.com">
-    <img src="assets/cheerpj-logo-dark.svg#gh-light-mode-only" alt="CheerpJ" width="280">
-    <img src="assets/cheerpj-logo-light.svg#gh-dark-mode-only" alt="CheerpJ" width="280">
-  </a>
+  <a href="https://cheerpj.com#gh-light-mode-only"><img src="assets/cheerpj-logo-dark.svg" alt="CheerpJ" width="280"></a>
+  <a href="https://cheerpj.com#gh-dark-mode-only"><img src="assets/cheerpj-logo-light.svg" alt="CheerpJ" width="280"></a>
 </p>
 
 <h3 align="center">Real Java in the browser.</h3>
