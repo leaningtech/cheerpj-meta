@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://discord.leaningtech.com
+    about: Questions and help getting started. The CheerpJ team answers on Discord.
+  - name: Documentation
+    url: https://cheerpj.com/docs/
+    about: Getting started, guides and the API reference.
+  - name: Licensing and commercial support
+    url: https://cheerpj.com/contact/
+    about: Licences, quotes, commercial support and enterprise deployments.

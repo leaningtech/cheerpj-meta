@@ -1,0 +1,72 @@
+name: Bug report
+description: Something in CheerpJ or the browser extensions doesn't work as it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. For questions, use [Discord](https://discord.leaningtech.com) instead.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched the existing issues and this hasn't been reported.
+          required: true
+        - label: I tested with no local Java installed and other browser extensions disabled.
+          required: false
+  - type: dropdown
+    id: product
+    attributes:
+      label: Where does it happen?
+      options:
+        - CheerpJ loaded from our CDN
+        - CheerpJ on your own server
+        - The CheerpJ browser extension for applets
+        - The CheerpJ browser extension for Java Web Start
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: CheerpJ version
+      description: From the loader URL, or the extension's version.
+      placeholder: "4.3"
+    validations:
+      required: true
+  - type: input
+    id: java
+    attributes:
+      label: Java version
+      description: The `version` you pass to `cheerpjInit`, if any. Java 8 is the default.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and OS
+      placeholder: Chrome 141 on Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How can we reproduce it?
+      description: A public URL, or attach a small JAR or zipped project, plus the steps.
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Browser console output
+      description: The full output, from page load to the error.
+      render: text
+  - type: input
+    id: regression
+    attributes:
+      label: Last version that worked
+      description: If this worked in an earlier CheerpJ version, which one?
