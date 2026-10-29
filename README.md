@@ -1,9 +1,7 @@
 <p align="center">
   <a href="https://cheerpj.com">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="assets/cheerpj-logo-light.svg">
-      <img src="assets/cheerpj-logo-dark.svg" alt="CheerpJ" width="280">
-    </picture>
+    <img src="assets/cheerpj-logo-dark.svg#gh-light-mode-only" alt="CheerpJ" width="280">
+    <img src="assets/cheerpj-logo-light.svg#gh-dark-mode-only" alt="CheerpJ" width="280">
   </a>
 </p>
 
