@@ -2,7 +2,7 @@
 
 This example shows how to use CheerpJ to run a Java applet in the browser.
 
-Find the step-by-step on our [documentation website](https://labs.leaningtech.com/cheerpj3/examples/applet).
+Find the step-by-step on our [documentation website](https://cheerpj.com/docs/tutorials/applet).
 
 
 ## Credits
