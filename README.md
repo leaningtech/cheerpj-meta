@@ -6,15 +6,17 @@
 <h3 align="center">Real Java in the browser.</h3>
 
 <p align="center">
-  A Java runtime built from OpenJDK and compiled to WebAssembly.<br>
+  CheerpJ is a full OpenJDK distribution for the browser.<br>
   Build with Java, or run the applications you already have, from unmodified JARs.
 </p>
 
 <p align="center">
-  <a href="https://cheerpj.com/docs/changelog"><img src="https://img.shields.io/badge/CheerpJ-4.3-ff7c00?labelColor=1e1e1e" alt="CheerpJ 4.3"></a>
-  <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_8-8u492-e5e5d6?labelColor=1e1e1e" alt="Java 8: OpenJDK 8u492"></a>
-  <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_11-11.0.31-e5e5d6?labelColor=1e1e1e" alt="Java 11: OpenJDK 11.0.31"></a>
-  <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_17-17.0.19-e5e5d6?labelColor=1e1e1e" alt="Java 17: OpenJDK 17.0.19"></a>
+  <a href="https://cheerpj.com/docs/changelog"><img src="https://img.shields.io/badge/CheerpJ-5.0-ff7c00?labelColor=1e1e1e" alt="CheerpJ 5.0"></a>
+  <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_8-8u512-e5e5d6?labelColor=1e1e1e" alt="Java 8: OpenJDK 8u512"></a>
+  <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_11-11.0.33-e5e5d6?labelColor=1e1e1e" alt="Java 11: OpenJDK 11.0.33"></a>
+  <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_17-17.0.21-e5e5d6?labelColor=1e1e1e" alt="Java 17: OpenJDK 17.0.21"></a>
+  <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_21-21.0.13-e5e5d6?labelColor=1e1e1e" alt="Java 21: OpenJDK 21.0.13"></a>
+  <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_25_(preview)-25.0.5-e5e5d6?labelColor=1e1e1e" alt="Java 25, in preview: OpenJDK 25.0.5"></a>
   <a href="https://discord.leaningtech.com"><img src="https://img.shields.io/discord/988743885121548329?color=%237289DA&logo=discord&logoColor=ffffff&labelColor=1e1e1e" alt="Discord"></a>
 </p>
 
@@ -28,10 +30,10 @@
 </p>
 
 ```html
-<script src="https://cjrtnc.leaningtech.com/4.3/loader.js"></script>
+<script src="https://cjrtnc.leaningtech.com/5.0/loader.js"></script>
 ```
 
-CheerpJ is a Java runtime built from OpenJDK and compiled to WebAssembly. It runs Java applications, applets, Java Web Start apps and libraries on Java 8, 11 and 17, inside the browser tab. There is no Java to install, no plug-in and no server component.
+CheerpJ is a Java runtime built from OpenJDK and compiled to WebAssembly. It runs Java applications, applets, Java Web Start apps and libraries on Java 8, 11, 17 and 21, with Java 25 in preview, inside the browser tab. There is no Java to install, no plug-in and no server component.
 
 > [!NOTE]
 > This repository is CheerpJ's public **issue tracker** and its **[examples](examples)**. CheerpJ itself is delivered from a CDN, so there is nothing to build here. The documentation is at [cheerpj.com/docs](https://cheerpj.com/docs/).
@@ -57,7 +59,7 @@ Put your JAR, or Oracle's [TextDemo.jar](https://docs.oracle.com/javase/tutorial
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <script src="https://cjrtnc.leaningtech.com/4.3/loader.js"></script>
+    <script src="https://cjrtnc.leaningtech.com/5.0/loader.js"></script>
   </head>
   <body>
     <script type="module">
@@ -124,7 +126,7 @@ More in [How CheerpJ works](https://cheerpj.com/how-cheerpj-works/) and the [arc
 
 ## Why CheerpJ
 
-- **Real Java.** Built from OpenJDK: the OpenJDK class library itself, not a reimplementation. Java 8, 11 and 17. Your bytecode runs unmodified, including reflection, dynamic class loading, custom class loaders and obfuscated code. No source code is needed.
+- **Real Java.** Built from OpenJDK: the OpenJDK class library itself, not a reimplementation. Java 8, 11, 17 and 21, with Java 25 in preview, and each future Java LTS release supported within six months of its launch. Every version ships the full JDK, not only the runtime, so Java can be compiled in the browser too. Your bytecode runs unmodified, including reflection, dynamic class loading, custom class loaders and obfuscated code. No source code is needed.
 - **Runs what a Java client does.** Swing and AWT, files, networking and sockets, printing, audio, the clipboard and threads. Native methods can be [implemented in JavaScript](https://cheerpj.com/docs/guides/implementing-native-methods) or compiled to WebAssembly.
 - **Runs on the user's machine.** Your application runs in the browser's sandbox on the user's own device, not on a server. CheerpJ is a set of static files: load it from our CDN, or host it on your own web server, including on networks with no internet access. A self-hosted deployment never needs to contact our servers.
 
@@ -132,7 +134,7 @@ More in [How CheerpJ works](https://cheerpj.com/how-cheerpj-works/) and the [arc
 
 | | |
 | --- | --- |
-| **Java** | 8 (the default), 11 and 17. Choose with [`cheerpjInit({ version })`](https://cheerpj.com/docs/reference/cheerpjInit#version). The browser extensions run Java 8 |
+| **Java** | 8 (the default), 11, 17 and 21, with 25 in preview. Choose with [`cheerpjInit({ version })`](https://cheerpj.com/docs/reference/cheerpjInit#version). The browser extensions run Java 8 |
 | **Applications** | Desktop applications, applets, Java Web Start / JNLP, Oracle Forms and EBS, and libraries |
 | **UI** | Swing and AWT |
 | **Networking** | HTTP(S) through the browser, with its certificates and TLS policies. TCP and UDP sockets through [Tailscale](https://cheerpj.com/docs/guides/Networking) |

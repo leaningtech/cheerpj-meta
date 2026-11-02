@@ -31,7 +31,7 @@ body:
     attributes:
       label: CheerpJ version
       description: From the loader URL, or the extension's version.
-      placeholder: "4.3"
+      placeholder: "5.0"
     validations:
       required: true
   - type: input
