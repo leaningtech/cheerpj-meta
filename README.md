@@ -12,12 +12,14 @@
 
 <p align="center">
   <a href="https://cheerpj.com/docs/changelog"><img src="https://img.shields.io/badge/CheerpJ-5.0-ff7c00?labelColor=1e1e1e" alt="CheerpJ 5.0"></a>
+  <a href="https://discord.leaningtech.com"><img src="https://img.shields.io/discord/988743885121548329?color=%237289DA&logo=discord&logoColor=ffffff&labelColor=1e1e1e" alt="Discord"></a>
+</p>
+<p align="center">
   <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_8-8u512-e5e5d6?labelColor=1e1e1e" alt="Java 8: OpenJDK 8u512"></a>
   <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_11-11.0.33-e5e5d6?labelColor=1e1e1e" alt="Java 11: OpenJDK 11.0.33"></a>
   <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_17-17.0.21-e5e5d6?labelColor=1e1e1e" alt="Java 17: OpenJDK 17.0.21"></a>
   <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_21-21.0.13-e5e5d6?labelColor=1e1e1e" alt="Java 21: OpenJDK 21.0.13"></a>
   <a href="https://cheerpj.com/compatibility/"><img src="https://img.shields.io/badge/Java_25_(preview)-25.0.5-e5e5d6?labelColor=1e1e1e" alt="Java 25, in preview: OpenJDK 25.0.5"></a>
-  <a href="https://discord.leaningtech.com"><img src="https://img.shields.io/discord/988743885121548329?color=%237289DA&logo=discord&logoColor=ffffff&labelColor=1e1e1e" alt="Discord"></a>
 </p>
 
 <p align="center">
