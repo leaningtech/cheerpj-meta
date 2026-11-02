@@ -49,7 +49,7 @@ CheerpJ is a Java runtime built from OpenJDK and compiled to WebAssembly. It run
 
 ## Quick start
 
-You need your JAR files, an HTML page and an HTTP server. No Java source code and no local Java install. The [getting started guides](https://cheerpj.com/docs/getting-started) cover each case step by step.
+You need your JAR files, an HTML page and an HTTP server. You don't need the Java source code or a local Java install. The [getting started guides](https://cheerpj.com/docs/getting-started) cover each case step by step.
 
 <details>
 <summary><b>Run a Java UI in the browser</b></summary>
@@ -73,11 +73,13 @@ Put your JAR, or Oracle's [TextDemo.jar](https://docs.oracle.com/javase/tutorial
 </html>
 ```
 
-Serve the folder and open http://localhost:8080:
+Start a web server in that folder:
 
 ```sh
 npx http-server -p 8080
 ```
+
+Then open http://localhost:8080 in your browser.
 
 - The script tag loads CheerpJ, and `cheerpjInit` starts it.
 - `cheerpjCreateDisplay` creates the area that holds the Java windows.
@@ -120,7 +122,7 @@ See [Run a Java library](https://cheerpj.com/docs/getting-started/Java-library),
 
 ## How CheerpJ runs your Java
 
-1. **Add CheerpJ to the page.** One script tag loads the JVM and the OpenJDK runtime, from our CDN or your own server. Or install a [browser extension](https://cheerpj.com/extensions/), with no changes to the page.
+1. **Add CheerpJ to the page.** One script tag loads the JVM and the OpenJDK runtime from our CDN or from your own server. If you can't change the page, a [browser extension](https://cheerpj.com/extensions/) adds CheerpJ instead.
 2. **Start the JVM and run your JAR.** CheerpJ reads your JARs and their dependencies as they are. An interpreter starts running the bytecode, and a JIT compiles the code that runs most to optimised JavaScript.
 3. **It runs in the tab.** A virtualised window manager draws the Swing and AWT interface with HTML elements and canvases. Files and networking go through the browser, inside its sandbox.
 
@@ -192,7 +194,7 @@ In Claude Code, run `/plugin marketplace add leaningtech/skills`, then `/plugin 
 - A public URL or a small JAR that shows the problem
 - The full browser console output, from page load to the error
 
-Test without a local Java install and with other extensions disabled. Check the [FAQs](https://cheerpj.com/faqs/) first.
+Reproduce it on a computer without Java installed, with other browser extensions disabled. Check the [FAQs](https://cheerpj.com/faqs/) first.
 
 </details>
 

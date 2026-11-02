@@ -13,7 +13,7 @@ body:
       options:
         - label: I searched the existing issues and this hasn't been reported.
           required: true
-        - label: I tested with no local Java installed and other browser extensions disabled.
+        - label: I reproduced it on a computer without Java installed, with other browser extensions disabled.
           required: false
   - type: dropdown
     id: product
